@@ -1,0 +1,35 @@
+/* 
+    Document   : login
+    Created on : 18.Kas.2012, 23:26:15
+    Author     : LifeBook
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#root {
+ -fx-background-color:  linear-gradient(lightgray, gray);
+ -fx-border-color: white;
+ -fx-border-radius: 20;
+ -fx-padding: 10 10 10 10;
+ -fx-background-radius: 20;
+ 
+}
+
+#bp {
+ -fx-background-color:  linear-gradient(blue,DimGrey );
+ -fx-effect: dropshadow(two-pass-box , darkgray, 10, 0.0 , 4, 5);
+}
+
+#btnLogin {
+    -fx-background-radius: 30, 30, 29, 28;
+    -fx-padding: 3px 10px 3px 10px;
+    -fx-background-color: linear-gradient(orange, orangered );
+    
+}
+#btnLogin:hover{
+    -fx-background-color: linear-gradient(orangered, orange);
+}
+
+#text {
+ -fx-fill:  linear-gradient(orange , orangered);
+}

@@ -1,0 +1,105 @@
+{
+    "version": "1.6",
+    "name": "EBA001_MarketServer_JSON",
+    "subline": "Documentation",
+    "username": "Ertuğrul SARUHAN",
+    "created": "10/01/2012",
+    "website": "",
+    "update": "11/06/2012",
+    "update_today": true,
+    "email": "ertugrul.saruhan@eba.gov.tr",
+    "intro": "",
+    "sections": [{
+        "title": "ABOUT",
+        "id": "about",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This service aims to manage applications through EBA Market in tablet. &nbsp;This service gives a set of service to EBA Market &nbsp;retrieving the list of newest , actual , featured applications &nbsp;or details of applications &nbsp;e.g. &nbsp;from repository.</span></p>\n<p>\tEBA Market uses this service for retrieving all needs for managing applications from market repository.&nbsp;</p>\n<p>\tEBA Market is android application in tablet to use manage android applications for EBA Portal. EBA Market is used to install, remove, update applications in tablet.&nbsp;</p>\n<p>\t&nbsp;</p>\n<p>\t&nbsp;</p>\n<p>\t&nbsp;</p>\n<p>\t&nbsp;</p>\n<p>\t&nbsp;</p>\n<p>\t&nbsp;</p>\n<div>\n\t&nbsp;</div>\n"
+    },{
+        "title": "Actual Applications",
+        "id": "actual_applications",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for retrieving &nbsp;actual applications list according to given record number from specified location at database.</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; start, record  , udid\n\n   start  ==&gt; starting row of table\n   record ==&gt; the number of record\n   udid   ==&gt;  the device unique id</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/ActualApplications?start=0&amp;record=10&amp;udid=a4e34adfadsgadfgasdf</pre>\n<p>\t&nbsp;</p>\n"
+    },{
+        "title": "Newest Applications",
+        "id": "newest_applications",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for retrieving the newest applications in android market.&nbsp;</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; start, record , udid\n\n  start  ==&gt; the starting row\n  record ==&gt; the number of record\n  udid   ==&gt; the device unique id</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/NewestApplications?start=0&amp;record=10&amp;udid=4dsfa34dsfa\n\n</pre>\n<p>\t&nbsp;</p>\n"
+    },{
+        "title": "Updated Applications",
+        "id": "updated_applications",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for retrieving the updated applications in android market .</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; start, record , udid\n\n  start  ==&gt; the starting row\n  record ==&gt; the number of record\n  udid   ==&gt; the device unique id\n\n</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/PopularApplications?start=0&amp;record=10&amp;udid=dedsfaj342adsfg</pre>\n<p>\t&nbsp;</p>\n"
+    },{
+        "title": "Popular Applications",
+        "id": "popular_applications",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for retrieving the popular applications in android market according to downloa count number of an application.</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; start, record ,udid\n\n  start  ==&gt; the starting row\n  record ==&gt; the number of record\n  udid   ==&gt; the device uniqu id</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/PopularApplications?start=0&amp;record=10&amp;udid=2sdfadfa34asdf\n</pre>\n<div>\n\t&nbsp;</div>\n"
+    },{
+        "title": "Featured Applications",
+        "id": "featured_applications",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for retrieving featured applications .</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; start, record  , udid\n\n   start  ==&gt; starting row of a table\n   record ==&gt; the number of record\n   udid   ==&gt; the device unique id</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/FeaturedApplications?start=0&amp;record=10&amp;udid=df32fesdfdsf</pre>\n<div>\n\t&nbsp;</div>\n"
+    },{
+        "title": "Check Updates",
+        "id": "check_updates",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for checking updated applications &nbsp;for given an array list of ids.&nbsp;</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; Array List ( a list of IDs applications )\n\n</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/CheckUpdates</pre>\n<div>\n\t&nbsp;</div>\n"
+    },{
+        "title": "Applications By Category",
+        "id": "applications_by_category",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for retrieving &nbsp;applications details &nbsp;for given &nbsp;a category id.&nbsp;</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; id, , start , record , udid\n   \n      id   ==&gt; category id\n    start  ==&gt; starting row of table\n    record ==&gt; the number of record.\n    udid   ==&gt; the device unique id\n\n</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/ApplicationsByCategory?id=1&amp;start=0&amp;record=10&amp;udid=3sdfasdf\n\n</pre>\n<p>\t&nbsp;</p>\n"
+    },{
+        "title": "Application Category List",
+        "id": "application_category_list",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for retrieving &nbsp;all categories detailed list .&nbsp;</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; \n\n</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/ApplicationCategoryList</pre>\n<p>\t&nbsp;</p>\n"
+    },{
+        "title": "Check Market Version",
+        "id": "check_market_version",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for checking EBA Market&#39; s &nbsp; last version.&nbsp;</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; \n\n</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/CheckMarketVersion</pre>\n<p>\t&nbsp;</p>\n"
+    },{
+        "title": "Details Of Applications",
+        "id": "details_of_applications",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for retrieving details of application for a given applicationd ID or application&#39;s package name.&nbsp;</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; appId ,  package , udid\n\n   appID  ==&gt; applicationd ID \n   package ==&gt; package name  AND\n    udid  ==&gt; the device unique id (CAN BE USED ONLY WITH PACKAGE )\n   </pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/DetailsOfApplications?appId=1\n    OR\n   /EBA001_MarketServer_JSON/DetailsOfApplications?package=tr.gov.eba.helloworld&amp;udid=e4dfsadadf</pre>\n<p>\t&nbsp;</p>\n"
+    },{
+        "title": "Device Cache Added",
+        "id": "device_cache_added",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for adding tablet &nbsp;if &nbsp;it doesn&#39;t &nbsp;exist &nbsp;in &nbsp;cached table. The EBA Market send the information of the user&#39;s tablet , the informations is added to table if not exist. ( brand, manufacture,model,product )&nbsp;</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; id, version,mac, brand,manufacture,model,product\n\n   id          ==&gt; UNIQUE ID of android tablet.\n   version     ==&gt; Android Version\n   mac         ==&gt;  MAC Adress of tablet\n   brand       ==&gt; brand of tablet\n   manufacture ==&gt; manufacturer of tablet\n   model       ==&gt; model of tablet\n   product     ==&gt; product name of tablet\n   udid        ==&gt; the unique device</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/DeviceCacheAdded?id=AD323443&amp;version=12&amp;mac=2F34D3F&amp;          brand=generalmobile&amp;manufacture=gm&amp;model=e-tab-gov&amp;product=e-tab&amp;udid=3dadfasdf3asdf\n\n</pre>\n<p>\t&nbsp;</p>\n"
+    },{
+        "title": "Get Version",
+        "id": "get_version",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for retrieving the details of versiong for a given package name.&nbsp;</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; package , udid\n\n</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/GetVersion?package=tr.gov.eba&amp;udid=3sdfadsfadf\n\n</pre>\n<p>\t&nbsp;</p>\n"
+    },{
+        "title": "Increase Popularity",
+        "id": "increase_popularity",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for increasing the download count of an application.</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; id\n</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/IncreasePopularity?id=1</pre>\n<p>\t&nbsp;</p>\n"
+    },{
+        "title": "Kill Cache Data",
+        "id": "kill_cache_data",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for killing the cached data.</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; \n</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/KillCacheData</pre>\n<p>\t&nbsp;</p>\n"
+    },{
+        "title": "Search",
+        "id": "search",
+        "content": "<p>\t<span style=\"color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; font-size: 12px; line-height: 18px; -webkit-text-size-adjust: none; \">This servlet is used for searching in application for a given text.</span></p>\n<p>\t&nbsp;</p>\n<p>\t<strong>Mandatory Params</strong></p>\n<pre>\n   for all types -&gt; q \n\n  start  ==&gt; the text for search\n\n</pre>\n<p>\t<strong>Optional Params</strong></p>\n<pre>\n   \n</pre>\n<p>\t<strong>Usage Examples</strong></p>\n<pre>\n   /EBA001_MarketServer_JSON/Search?q=morhp</pre>\n<p>\t&nbsp;</p>\n"
+    }],
+    "use_sub": false,
+    "logo": "",
+    "favicon": "http://envato.com/wp-content/themes/envato/images/favicon.ico",
+    "customcss": "",
+    "easing": "swing",
+    "easingduration": "575",
+    "bgimage": "",
+    "bgrepeat": "repeat",
+    "bgattachment": "scroll",
+    "bgcolor": "FFFFD9",
+    "textcolor": "554236",
+    "linkcolor": "F77825",
+    "hrcolor1": "DEDEBA",
+    "hrcolor2": "FFFFD6",
+    "sidebarbgimage": "",
+    "sidebarbgrepeat": "repeat",
+    "sidebarbgcolor": "554236",
+    "sidebartextcolor": "CDB380",
+    "sidebarlinkcolor": "F77825",
+    "sidebaractivecolor": "45352C",
+    "sidebaractivetextcolor": "CDB380",
+    "sidebarhrcolor1": "30251F",
+    "sidebarhrcolor2": "6B5344",
+    "cufon": "",
+    "itemURL": "",
+    "sendJSON": "",
+    "sendZIP": "",
+    "sendPWD": ""
+}
